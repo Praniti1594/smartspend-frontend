@@ -1,0 +1,205 @@
+.homeWrapper {
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #0d0d1a, #1a0033, #000000, #1a0033);
+  background-size: 400% 400%;
+  animation: gradientFlow 15s ease infinite;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar */
+.homeNavbar {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: rgba(26, 26, 42, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+}
+
+.homeLogo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b97fff;
+  animation: pulse 2s infinite;
+}
+
+/* Main Content */
+.homeMain {
+  margin-top: 10vh;
+  text-align: center;
+}
+
+.homeHeading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #b97fff;
+  animation: fadeInDown 1.5s ease;
+  text-shadow: 0 0 10px rgba(145, 58, 255, 0.6);
+}
+
+.homeSubheading {
+  font-size: 1.3rem;
+  color: #d6c2ff;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1.5s ease;
+  text-shadow: 0 0 6px rgba(200, 150, 255, 0.2);
+}
+
+/* Buttons */
+.authButtons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.loginBtn, .signupBtn {
+  padding: 1rem 2.2rem;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+  font-weight: 500;
+  color: white;
+  box-shadow: 0 0 12px rgba(185, 127, 255, 0.25);
+}
+
+.loginBtn {
+  background: linear-gradient(to right, #913aff, #b97fff);
+}
+
+.signupBtn {
+  background: linear-gradient(to right, #c084fc, #a855f7);
+}
+
+.loginBtn:hover, .signupBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 16px rgba(185, 127, 255, 0.4);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .authButtons {
+    flex-direction: column;
+  }
+
+  .homeHeading {
+    font-size: 2.3rem;
+  }
+
+  .homeSubheading {
+    font-size: 1.1rem;
+  }
+}
+.popupMessage {
+  background-color: rgba(145, 58, 255, 0.15);
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+  margin-left: 7rem;
+  border: 1px solid #b97fff;
+  color: #e6d7ff;
+  font-size: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(145, 58, 255, 0.3);
+  animation: slideUp 1s ease forwards;
+  max-width: 60%;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+.fade-in-delay {
+  animation: fadeIn 2.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-2 {
+  animation: fadeIn 3.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+.homeMain {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 4rem;
+  width: 100%;
+  padding: 4rem 6rem;
+  flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.mainLeft {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mainRight {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landingImg {
+  height: 75vh;
+  object-fit: contain;
+  
+  filter: drop-shadow(0 0 12px rgba(145, 58, 255, 0.3));
+  border-radius: 20%;
+}

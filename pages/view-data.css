@@ -1,0 +1,318 @@
+.wrapper {
+  padding: 2rem;
+  background: linear-gradient(to right, #121212, #1e1e2f);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: #f1f1f1;
+}
+
+
+/* --- Navbar --- */
+.navbar {
+ display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 2.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(26, 26, 42, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 16px 16px;
+}
+
+.link {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+.navLinks {
+  display: flex;
+  gap: 1.2rem;
+  margin-left: auto;
+  align-items: center;
+}
+
+.link:hover {
+  color: #fff;
+  background-color: rgba(145, 58, 255, 0.2);
+}
+
+
+.logo {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #913aff;
+  animation: pulse 2s infinite;
+}
+
+
+/* Modern Dark Table */
+.expensesTable {
+  width: 100%;
+  margin-top: 2.5rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #1f1f2e;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 1s ease;
+}
+
+.expensesTable th,
+.expensesTable td {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 1rem;
+  border-bottom: 1px solid #2c2f48;
+  transition: background-color 0.25s ease;
+}
+
+.expensesTable th {
+  background: #2b2e45;
+  color: #aab4ff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.expensesTable td {
+  color: #e1e1e6;
+}
+
+.expensesTable tr:nth-child(even) {
+  background-color: #23263b;
+}
+
+.expensesTable tr:hover {
+  background-color: #2c2f48;
+  box-shadow: inset 0 0 8px rgba(13, 110, 253, 0.25);
+  transform: scale(1.005);
+  cursor: pointer;
+}
+
+.expensesTable td:first-child {
+  font-weight: 500;
+  color: #66b2ff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+
+.searchBarContainer {
+  margin: 2rem auto 1rem;
+  max-width: 500px;
+  text-align: center;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #2c2f48;
+  color: #f1f1f1;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.15);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.searchInput::placeholder {
+  color: #bbb;
+}
+
+.searchInput:focus {
+  background-color: #343854;
+  box-shadow: 0 0 12px rgba(13, 110, 253, 0.3);
+}
+
+.addForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem auto;
+  max-width: 950px;
+  justify-content: center;
+  background: #1f1f2e;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 1s ease;
+  position: relative;
+}
+
+.addForm input[type="text"],
+.addForm input[type="number"],
+.addForm input[type="date"] {
+  padding: 0.8rem 1.1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #2c2f48;
+  background-color: #2c2f48;
+  color: #f1f1f1;
+  transition: border 0.3s ease, background 0.3s ease;
+  min-width: 180px;
+  flex: 1;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.addForm input:focus {
+  border-color: #0d6efd;
+  background-color: #343854;
+  outline: none;
+}
+
+.addForm button {
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.4);
+}
+
+.addForm button:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.03);
+}
+
+.addForm input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.actionButton {
+  padding: 8px 14px;
+  margin: 2px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.editButton {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+.editButton:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(13, 110, 253, 0.4);
+}
+
+.deleteButton {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+.deleteButton:hover {
+  background-color: #bb2d3b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(220, 53, 69, 0.4);
+}
+
+.customDatePicker {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #2c2f48;
+  color: #03010d;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.15);
+  width: 80%;
+  outline: none;
+}
+
+.react-datepicker__input-container input::placeholder {
+  color: #aaa;
+}
+
+.react-datepicker {
+  background-color: #1f1f2e;
+  border: none;
+  box-shadow: 0 0 12px rgba(13, 110, 253, 0.3);
+  color: #fff;
+  border-radius: 8px;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.react-datepicker__header {
+  background-color: #2c2f48;
+  border-bottom: 1px solid #444;
+  color: #f1f1f1;
+}
+.logout-link {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.logout-link:hover {
+  color: #fff;
+  background-color: rgba(145, 58, 255, 0.2);
+}

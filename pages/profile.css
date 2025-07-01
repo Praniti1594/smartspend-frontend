@@ -1,0 +1,164 @@
+/* --- Wrapper --- */
+.profileWrapper {
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #0d0d1a, #1a0033, #000000, #1a0033);
+  background-size: 400% 400%;
+  animation: gradientFlow 15s ease infinite;
+  color: #f1f1f1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- Navbar --- */
+.navbar {
+  width: 100%; /* make it stretch full width */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  background: rgba(26, 26, 42, 0.6);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 16px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #913aff;
+  animation: pulse 2s infinite;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.link {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+.link:hover {
+  color: #fff;
+  background-color: rgba(145, 58, 255, 0.2);
+}
+
+/* --- Animation Background --- */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* --- Profile Card --- */
+.profileCard {
+  background-color: rgba(31, 31, 47, 0.9);
+  padding: 1.5rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.06);
+  width: 100%;
+  max-width: 520px;
+  margin-bottom: 2rem;
+}
+
+.profileHeading {
+  font-size: 2.2rem;
+  color: #b97fff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.profileSubheading {
+  font-size: 1.6rem;
+  color: #c2a3ff;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.userInfo p {
+  font-size: 1.1rem;
+  margin: 0.3rem 0;
+  color: #dddddd;
+}
+
+.summaryList {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.summaryList li {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  color: #e2e2e2;
+}
+
+
+/* --- Profile Section Layout --- */
+.profileContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  width: 100%;
+  max-width: 1300px;
+  margin-top: 2rem;
+}
+
+/* Text Section */
+.profileLeft {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 500px;
+  padding-left: 1rem;
+}
+
+/* GIF Section */
+.profileRight {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 70vh;
+ padding-bottom: 6rem;
+}
+
+.rotatingGif {
+  height: 75vh;
+  object-fit: contain;
+  transform: scaleX(-1); /* Flipped horizontally */
+  filter: drop-shadow(0 0 12px rgba(145, 58, 255, 0.3));
+  padding-right: 6rem;
+  padding-bottom: 6rem;
+  border-radius: 20%;
+}
+
+.logout-link {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.logout-link:hover {
+  color: #fff;
+  background-color: rgba(145, 58, 255, 0.2);
+}
