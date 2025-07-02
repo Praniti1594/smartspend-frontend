@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import './auth.css';
+// import './auth.css';
 
 export default function Login() {
   const [form, setForm] = useState({ email: '', password: '' });
