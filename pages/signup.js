@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import './signup.css';
+// import './signup.css';
 
 export default function Signup() {
   const [form, setForm] = useState({ name: '', email: '', password: '' });
