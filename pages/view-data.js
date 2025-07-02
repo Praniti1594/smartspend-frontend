@@ -134,7 +134,7 @@ export default function ViewData() {
         </div>
       </nav>
 
-      <h1 className="heading">Past Expense Logs</h1>
+      
 
       <div className="searchBarContainer">
         <input
