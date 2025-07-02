@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import './index.css';
+// import './index.css';
 
 export default function HomeLanding() {
   const router = useRouter();
