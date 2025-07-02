@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './view-data.css';
+// import './view-data.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { ToastContainer, toast } from 'react-toastify';
@@ -123,7 +123,7 @@ export default function ViewData() {
 
   return (
     <div className="wrapper">
-      <nav className="navbar">
+      <nav className="navbar34">
         <div className="logo">💸 SmartSpend</div>
         <div className="navLinks">
           <Link href="/home" className="link">Home</Link>
