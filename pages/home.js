@@ -20,11 +20,11 @@ const [showReceiptForm, setShowReceiptForm] = useState(false);
 
 
   const mascotMessages = [
-    "Hey! Don't forget to log your expenses.",
-    "Let's upload your receipt.",
+    "Hey! Don&apos;t forget to log your expenses.",
+    "Let&apos;s upload your receipt.",
     "Saving money is super cool!",
     "Great job checking your data.",
-    "You're doing amazing. Keep it up!"
+    "You&apos;re doing amazing. Keep it up!"
   ];
 
   // 🔐 Fetch user from localStorage and redirect if missing
