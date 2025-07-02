@@ -1,7 +1,7 @@
 // pages/visualizations.js
 import React, { useState, useEffect } from 'react';
 import { PieChart, Pie, Cell, Tooltip, BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend } from 'recharts';
-import './visualisations.css';
+// import './visualisations.css';
 import { useRouter } from 'next/router';
 import { LineChart, Line } from 'recharts';
 import Confetti from 'react-confetti';
