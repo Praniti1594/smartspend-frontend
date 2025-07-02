@@ -1,6 +1,6 @@
 
 /* --- Navbar --- */
-.navbar {
+.navbar12 {
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
@@ -135,7 +135,7 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-.wrapper {
+.wrapper12 {
   padding: 2rem;
   position: relative;
 }
@@ -150,18 +150,18 @@ body {
   padding: 1rem;
 }
 
-.headingText {
+.headingText12 {
   font-size: 3.2rem;
   margin-bottom: 0.2rem;
    font-family: 'Segoe UI', sans-serif;
 }
 
-.subheading {
+.subheading12{
   font-size: 2.2rem;
   color: #c3b7b7;
 }
 
-.buttonGroup2 {
+.buttonGroup12 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,7 +176,7 @@ body {
   cursor: pointer;
 }
 
-.button {
+.button12 {
   padding: 0.6rem 1.3rem;
   font-size: 1rem;
   background-color: #4caf50;
@@ -187,7 +187,7 @@ body {
   transition: background 0.2s ease-in-out;
 }
 
-.button:hover {
+.button12:hover {
   background-color: #45a049;
 }
 .popupOverlay {
