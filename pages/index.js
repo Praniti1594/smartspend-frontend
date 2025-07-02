@@ -47,7 +47,7 @@ export default function HomeLanding() {
 
     {popupVisible && (
       <div className="popupMessage slide-up">
-        ✨ Let's make your money work smarter!
+        ✨ Let&apos;s make your money work smarter!
       </div>
     )}
   </div>
