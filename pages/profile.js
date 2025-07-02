@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "./profile.css";
+// import "./profile.css";
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
