@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { toast } from 'react-hot-toast';
-import './home.css';
+// import './home.css';
 import Link from 'next/link';
 
 export default function Home() {
@@ -20,11 +20,11 @@ const [showReceiptForm, setShowReceiptForm] = useState(false);
 
 
   const mascotMessages = [
-    "Hey! Don&apos;t forget to log your expenses.",
-    "Let&apos;s upload your receipt.",
+    "Hey! Don't forget to log your expenses.",
+    "Let's upload your receipt.",
     "Saving money is super cool!",
     "Great job checking your data.",
-    "You&apos;re doing amazing. Keep it up!"
+    "You're doing amazing. Keep it up!"
   ];
 
   // 🔐 Fetch user from localStorage and redirect if missing
@@ -167,8 +167,8 @@ const handleReceiptUpload = async (e) => {
   };
 
   return (
-    <main className="wrapper">
-      <nav className="navbar">
+    <main className="wrapper12">
+      <nav className="navbar12">
         <div className="logo">SmartSpend</div>
         <div className="navLinks">
           <Link href="/home" className="link">Home</Link>
@@ -180,15 +180,15 @@ const handleReceiptUpload = async (e) => {
       </nav>
 
 <div className="centerContainer">
-  <div className="heading">
-    <h1 className="headingText">{typedText}</h1>
-    <p className="subheading">Your intelligent finance analyzer</p>
+  <div className="heading12">
+    <h1 className="headingText12">{typedText}</h1>
+    <p className="subheading12">Your intelligent finance analyzer</p>
   </div>
 
 {/* Upload CSV Section */}
 <div className="buttonGroup2">
   {!showCSVForm ? (
-    <button onClick={() => setShowCSVForm(true)} className="button">
+    <button onClick={() => setShowCSVForm(true)} className="button12">
       📂 Upload CSV
     </button>
   ) : (
@@ -205,9 +205,9 @@ const handleReceiptUpload = async (e) => {
 </div>
 
 {/* Upload Receipt Section */}
-<div className="buttonGroup">
+<div className="buttonGroup12">
   {!showReceiptForm ? (
-    <button onClick={() => setShowReceiptForm(true)} className="button">
+    <button onClick={() => setShowReceiptForm(true)} className="button12">
       🧾 Upload Receipt
     </button>
   ) : (
